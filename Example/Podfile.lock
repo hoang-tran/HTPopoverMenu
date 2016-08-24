@@ -1,0 +1,22 @@
+PODS:
+  - HTPopoverMenu (0.1.0)
+  - Nimble (3.2.0)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - HTPopoverMenu (from `../`)
+  - Nimble (~> 3.0)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  HTPopoverMenu:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HTPopoverMenu: 8fcbf87188344cf0f1fb99fa6584c59474e5042f
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: 3f4e2cf1111a7e0c0ed263c170986203868ef3d9
+
+COCOAPODS: 1.0.1
