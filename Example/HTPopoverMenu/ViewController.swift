@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import HTPopoverMenu
 
 class ViewController: UIViewController {
 
   @IBOutlet weak var tableView: UITableView!
+  let menu = HTPopoverMenu()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -56,7 +58,7 @@ extension ViewController : UITableViewDelegate {
 extension ViewController : DemoCellDelegate {
 
   func demoCell(demoCell: DemoCell, onTapButton button: UIButton) {
-    print("something")
+    menu.showFromView(button)
   }
 
 }
