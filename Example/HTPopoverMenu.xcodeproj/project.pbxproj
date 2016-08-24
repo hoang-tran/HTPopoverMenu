@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A2169939EDA1F9150F5DEE3C /* Pods_HTPopoverMenu_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED6FE82E40A8F072AE8998D /* Pods_HTPopoverMenu_Tests.framework */; };
 		D686A522E9BE5296F1E9A29A /* Pods_HTPopoverMenu_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 396893A0E1D9E07427BFE6EB /* Pods_HTPopoverMenu_Example.framework */; };
+		F33EBE0E1D6DE81C00E18E0E /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33EBE0D1D6DE81C00E18E0E /* DemoCell.swift */; };
+		F33EBE101D6DE82600E18E0E /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F33EBE0F1D6DE82600E18E0E /* DemoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		C96F7AC148D7BBB00C87EF71 /* Pods-HTPopoverMenu_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTPopoverMenu_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTPopoverMenu_Example/Pods-HTPopoverMenu_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4B2488DA0A6627E806A238B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D8D2FEC8D0D32975DC77B6D1 /* Pods-HTPopoverMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTPopoverMenu_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTPopoverMenu_Tests/Pods-HTPopoverMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F33EBE0D1D6DE81C00E18E0E /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		F33EBE0F1D6DE82600E18E0E /* DemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 		607FACD21AFB9204008FA782 /* Example for HTPopoverMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F33EBE0C1D6DE80C00E18E0E /* Cells */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -157,6 +162,15 @@
 				6D8CA57358D1A7021FD597B3 /* Pods-HTPopoverMenu_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F33EBE0C1D6DE80C00E18E0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F33EBE0D1D6DE81C00E18E0E /* DemoCell.swift */,
+				F33EBE0F1D6DE82600E18E0E /* DemoCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +262,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				F33EBE101D6DE82600E18E0E /* DemoCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +376,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				F33EBE0E1D6DE81C00E18E0E /* DemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
