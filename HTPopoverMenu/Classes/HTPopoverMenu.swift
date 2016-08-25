@@ -39,6 +39,7 @@ public class HTPopoverMenu : UIViewController {
     tableView.bounces = false
     tableView.dataSource = self
     tableView.delegate = self
+    tableView.registerNib(UINib.fromPodWithNibName("HTPopoverMenuCell"), forCellReuseIdentifier: kHTPopoverMenuCellReuseID)
     return tableView
   }()
 
@@ -66,8 +67,6 @@ extension HTPopoverMenu {
   }
 }
 
-let menuCellReuseID = "menuCellReuseID"
-
 extension HTPopoverMenu : UITableViewDataSource {
   public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     return 1
@@ -78,12 +77,9 @@ extension HTPopoverMenu : UITableViewDataSource {
   }
 
   public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    var cell = tableView.dequeueReusableCellWithIdentifier(menuCellReuseID)
-    if cell == nil {
-      cell = UITableViewCell(style: .Default, reuseIdentifier: menuCellReuseID)
-    }
-    cell?.textLabel!.text = String(indexPath.row)
-    return cell!
+    let cell = tableView.dequeueReusableCellWithIdentifier(kHTPopoverMenuCellReuseID, forIndexPath: indexPath) as! HTPopoverMenuCell
+    cell.titleLabel.text = String(indexPath.row)
+    return cell
   }
 }
 

@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HTPopoverMenu: 8fcbf87188344cf0f1fb99fa6584c59474e5042f
+  HTPopoverMenu: 57bb54f168b4e20f5539ba5c2dddc37e4f90fdcf
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
   Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
 
